@@ -1,4 +1,11 @@
 spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: b1cc8ad35f99a8b6e127
+            client-secret: 8f9e80dd0ed06c2d0486e8fb7a511540b7cb79c4
   jackson:
     serialization:
       WRITE_DATES_AS_TIMESTAMPS: false
@@ -15,3 +22,8 @@ spring:
     hibernate:
       ddl-auto: create-drop
     show-sql: true
+
+  logging:
+    level:
+      org.springframework:
+        security: TRACE
